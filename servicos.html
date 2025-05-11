@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title.services">Serviços - NuvemITech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <div class="container d-flex align-items-center justify-content-between">
+      <img src="./imgs/nuvemitech.png" alt="NuvemITech Logo" class="img-fluid logo">
+      <nav class="d-flex align-items-center gap-3">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="servicos.html" class="nav-link active" data-i18n="nav.services">Serviços</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">Sobre</a>
+        <a href="contato.html" class="nav-link" data-i18n="nav.contact">Contato</a>
+        <div class="language-switcher">
+          <button class="lang-btn" data-lang="pt-BR"><span class="flag"></span>BR</button>
+          <button class="lang-btn" data-lang="en"><span class="flag"></span>EN</button
+        </div>
+        <button class="theme-btn theme-btn-desktop" data-theme-btn>
+          <ion-icon name="moon" class="moon"></ion-icon>
+          <ion-icon name="sunny" class="sun"></ion-icon>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-grow-1 py-5">
+    <div class="container">
+      <h1 data-i18n="services.title">Nossos Serviços 💻</h1>
+      <section id="computadores" class="mb-5">
+        <h2 data-i18n="services.computers.title">Computadores</h2>
+        <div class="plan-grid">
+          <div class="plan-card">
+            <i class="fas fa-desktop fa-2x mb-3"></i>
+            <h3 data-i18n="services.computers.maintenance.title">Manutenção e Upgrades</h3>
+            <p data-i18n="services.computers.maintenance.description">Formatação, reinstalação de sistemas, limpeza, upgrades de hardware (SSD, RAM).</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Formatação e reinstalação de sistemas operacionais, limpeza interna/externa, upgrades de SSD, RAM e processadores para máximo desempenho." data-details-en="Formatting and reinstallation of operating systems, internal/external cleaning, SSD, RAM, and processor upgrades for maximum performance." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+          <div class="plan-card">
+            <i class="fas fa-tools fa-2x mb-3"></i>
+            <h3 data-i18n="services.computers.diagnostics.title">Diagnósticos e Recuperação</h3>
+            <p data-i18n="services.computers.diagnostics.description">Diagnósticos avançados, recuperação de dados, configuração de backups.</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Diagnósticos detalhados para identificar falhas, recuperação de dados perdidos, configuração de backups locais e em nuvem." data-details-en="Detailed diagnostics to identify failures, data recovery, local and cloud backup configuration." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+          <div class="plan-card">
+            <i class="fas fa-shield-alt fa-2x mb-3"></i>
+            <h3 data-i18n="services.computers.security.title">Segurança e Otimização</h3>
+            <p data-i18n="services.computers.security.description">Instalação de antivírus, otimização para gamers/designers.</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Instalação de soluções de segurança digital, otimização de desempenho para jogos e design gráfico, suporte remoto para problemas comuns." data-details-en="Installation of digital security solutions, performance optimization for gaming and graphic design, remote support for common issues." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+        </div>
+      </section>
+      <section id="redes" class="mb-5">
+        <h2 data-i18n="services.networks.title">Redes (Domésticas e Empresariais)</h2>
+        <div class="plan-grid">
+          <div class="plan-card">
+            <i class="fas fa-network-wired fa-2x mb-3"></i>
+            <h3 data-i18n="services.networks.projects.title">Projetos de Rede</h3>
+            <p data-i18n="services.networks.projects.description">Estruturação, instalação de roteadores e cabos.</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Projetos completos de redes domésticas e empresariais, instalação de roteadores, cabos e conexões de internet de alta performance." data-details-en="Complete home and business network projects, installation of routers, cables, and high-performance internet connections." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+          <div class="plan-card">
+            <i class="fas fa-server fa-2x mb-3"></i>
+            <h3 data-i18n="services.networks.servers.title">Servidores e VPNs</h3>
+            <p data-i18n="services.networks.servers.description">Configuração de servidores, VPNs e firewalls.</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Instalação e configuração de servidores locais/remotos, VPNs para acesso seguro, e firewalls para proteção de rede." data-details-en="Installation and configuration of local/remote servers, VPNs for secure access, and firewalls for network protection." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+          <div class="plan-card">
+            <i class="fas fa-eye fa-2x mb-3"></i>
+            <h3 data-i18n="services.networks.monitoring.title">Monitoramento e Consultoria</h3>
+            <p data-i18n="services.networks.monitoring.description">Sistemas de monitoramento e consultoria de conexões.</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Configuração de sistemas de monitoramento remoto, consultoria para melhoria de conexões empresariais e manutenção preventiva." data-details-en="Configuration of remote monitoring systems, consulting for improving business connections, and preventive maintenance." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+        </div>
+      </section>
+      <section id="desenvolvimento">
+        <h2 data-i18n="services.development.title">Desenvolvimento</h2>
+        <div class="plan-grid">
+          <div class="plan-card">
+            <i class="fas fa-code fa-2x mb-3"></i>
+            <h3 data-i18n="services.development.websites.title">Sites e APIs</h3>
+            <p data-i18n="services.development.websites.description">Sites completos, landing pages, APIs de consulta.</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Desenvolvimento de sites completos, landing pages otimizadas, e APIs personalizadas para integração e consulta de dados." data-details-en="Development of complete websites, optimized landing pages, and custom APIs for data integration and querying." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+          <div class="plan-card">
+            <i class="fas fa-robot fa-2x mb-3"></i>
+            <h3 data-i18n="services.development.automation.title">Automação e IA</h3>
+            <p data-i18n="services.development.automation.description">Chatbots, automações de análise de dados (Python).</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Criação de chatbots com IA, automações em Python para análise de dados, e ferramentas para otimizar processos diários." data-details-en="Creation of AI chatbots, Python automations for data analysis, and tools to optimize daily processes." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+          <div class="plan-card">
+            <i class="fas fa-database fa-2x mb-3"></i>
+            <h3 data-i18n="services.development.databases.title">Banco de Dados</h3>
+            <p data-i18n="services.development.databases.description">Configuração e otimização de bancos de dados.</p>
+            <button class="btn btn-primary btn-sm toggle-details" data-details-pt="Estruturação e otimização de bancos de dados para aplicações web, SQL, e ambientes de produção como Active Directory." data-details-en="Structuring and optimization of databases for web applications, SQL, and production environments like Active Directory." data-i18n="services.details">Ver Detalhes</button>
+            <div class="details d-none"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <footer class="text-center">
+    <div class="container">
+      <p data-i18n="footer.company">NuvemITech - Soluções em TI, Redes e Desenvolvimento</p>
+      <p data-i18n="footer.copyright">São Paulo, SP | © 2025 NuvemITech. Todos os direitos reservados.</p>
+      <div class="social-links d-flex justify-content-center gap-3">
+        <a href="https://github.com/mynameisraphax" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/nuvemITech" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
